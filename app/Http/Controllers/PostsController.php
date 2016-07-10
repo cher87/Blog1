@@ -40,7 +40,7 @@ class PostsController extends Controller
 
     public function sortbytitle()
     {
-        $posts = Post::all();
+        $posts = DB::Table('posts')->get();
         $collection = collect($posts);
         $sorted = $collection->sortBy('title'); 
         return view('welcome', compact('sorted'));
