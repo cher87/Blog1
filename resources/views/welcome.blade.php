@@ -23,7 +23,7 @@
 
                     <!-- <h4>Add new post</h4> -->
                     <form method="POST" action="{{ route('posts.add') }}">
-                    {{!! csrf_field() !!}}
+                    {{ csrf_field() }}
                         <div class="form-group">
                             <textarea name="title" placeholder="Enter title.." class="form-control"></textarea> <br>
                             <textarea name="body" placeholder="Enter text.." class="form-control"></textarea> <br>

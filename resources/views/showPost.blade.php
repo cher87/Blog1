@@ -21,7 +21,7 @@
 
                     <!-- Add new comment -->
                     <form method="POST" action="{{ route('posts.add.comment', [$post->getKey()]) }}">
-                        {{!! csrf_field() !!}}
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <textarea name="body" placeholder="New comment.." class="form-control"></textarea> <br>
                         </div>
